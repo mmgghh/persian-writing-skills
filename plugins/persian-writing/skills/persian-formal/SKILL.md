@@ -1,22 +1,33 @@
 ---
 name: persian-formal
-description: Rules for writing formal and professional Persian — official letters (نامه اداری), reports, contracts, proposals, articles, and bilingual Persian/English business documents. Covers register, word choice, orthography (نیم‌فاصله), punctuation, numbers, and RTL markdown.
-when_to_use: Any Persian text that is formal, official, administrative, professional, academic, financial, or legal; also when translating English business text into Persian.
+description: Rules for writing formal, professional, and official Persian — administrative letters (نامه اداری), reports, engineering/tech docs, contracts, proposals, articles, and bilingual Persian/English business documents. Covers register, syntax, terminology, orthography (نیم‌فاصله), punctuation, numbers, and RTL markdown.
+when_to_use: Any Persian text that is formal, official, administrative, professional, academic, financial, or legal; also when translating English business/technical text into Persian or writing technical documentation.
 ---
 
-# Formal Persian writing
+# Formal & Technical Persian Writing
 
-This is the default register for documents. No colloquial (شکسته) forms: می‌روم, never می‌رم.
+This is the standard register for professional and formal documents. Colloquial (شکسته) forms, administrative jargon, and lazy transliterations are strictly forbidden (e.g., use می‌روم, never می‌رم).
 
-## Sentence structure
+---
 
-- Persian is SOV — put the verb at the end. Move it only for deliberate emphasis, and rarely.
-- One idea per sentence, under ~25 words. Split long chains instead of stacking «با توجه به اینکه … لذا …».
-- Prefer the active voice. Use the passive only when the agent is unknown or irrelevant, never as a politeness device.
-- Keep را directly after its direct object, not stranded after a long clause.
-- One topic per paragraph, three to five sentences.
+## 1. Sentence Structure & Grammar
 
-## Word choice
+- **SOV Order**: Persian is Subject-Object-Verb. Keep verbs at the end of the sentence. Shift them only for deliberate rhetorical emphasis.
+- **Conciseness & Sentence Length**: Limit sentences to ~25 words. Split multi-clause chains connected by verbose conjunctions (e.g., replace long «با توجه به اینکه … لذا …» chains with clear, distinct sentences).
+- **Active Voice Dominance**: Prefer the active voice. Use passive voice only when the agent is unknown or irrelevant—never as an artificial politeness device.
+  - *Incorrect:* «گزارش توسط تیم فنی آماده شد.»
+  - *Correct:* «تیم فنی گزارش را آماده کرد.»
+- **Object Marker (`را`) Placement**: Keep `را` immediately following its direct object. Do not allow long modifiers or subordinate clauses to strand `را`.
+  - *Incorrect:* «پیشنهادی که هفته گذشته مطرح شده بود را بررسی کردیم.»
+  - *Correct:* «پیشنهاد مطرح‌شده در هفته گذشته را بررسی کردیم.»
+- **Paragraphing**: Focus on one topic per paragraph (3–5 sentences maximum).
+
+---
+
+## 2. Word Choice, Vocabulary & Anti-Calques
+
+### Word Replacement Matrix
+Avoid archaic, overly complex, or redundant administrative terminology:
 
 | به‌جای | بنویس |
 |---:|---:|
@@ -25,7 +36,7 @@ This is the default register for documents. No colloquial (شکسته) forms: م
 | نمودن (به‌جای فعل اصلی) | کردن |
 | توسطِ … انجام شد | … انجام داد |
 | مورد بررسی قرار گرفت | بررسی شد |
-| در رابطه با | دربارهٔ، در مورد |
+| در رابطه با | درباره‌ی، در مورد |
 | جهتِ | برایِ |
 | بایستی، می‌بایست | باید |
 | علی‌رغم | به‌رغمِ، با وجودِ |
@@ -33,64 +44,121 @@ This is the default register for documents. No colloquial (شکسته) forms: م
 | اساتید | استادان |
 | گاهاً، تلفناً، زباناً | گاهی، تلفنی، شفاهی |
 
-- Persian words take Persian plurals (ها / ان). Never put tanwin on a Persian word.
-- No double plurals: مدارک, not مدارک‌ها.
-- Cut redundancy (حشو): «بازگشت مجدد» → «بازگشت»، «تقریباً حدودِ» → «حدودِ»، «سؤال پرسید» → «پرسید».
-- One term per concept, repeated. Synonym variation reads as imprecision in technical and financial text.
+### Plurals & Redundancy Rules
+- **Native Plurals**: Apply Persian plural suffixes (`-‌ها` / `-ان`) to Persian words. Do not apply Arabic plural forms to non-Arabic base words (*گزارشات* → *گزارش‌ها*).
+- **Arabic Loanwords**: Recognized standard Arabic broken or sound plurals (e.g., *استثنائات*, *مراحل*) are accepted in formal contexts.
+- **No Double Plurals**: Never apply `-ها` to an already pluralized word (*مدارک‌ها* → *مدارک*).
+- **Tanwin Rules**: Never apply Arabic Tanwin (`ـً`) to native Persian words (*زباناً* → *شفاهی*).
+- **Eliminate Redundancy (حشو)**:
+  - «بازگشت مجدد» → «بازگشت»
+  - «تقریباً حدودِ» → «حدودِ»
+  - «سؤال پرسید» → «پرسید»
+- **Consistency**: Use a single standard term for each concept throughout a document. Varying terms for variety causes ambiguity in legal, technical, and financial writing.
 
-### Technical terms
+### Technical & Engineering Terminology
+Use consistent translations for common software, engineering, and business terms:
 
-Use the preferred equivalent, never the alternative:
-
-| اصطلاح | بنویس | ننویس |
+| English Term | Standard Persian Equivalent (بنویس) | Avoid Transliteration / Incorrect (ننویس) |
 |---:|---:|---:|
-| token | توکن | نشانه |
-| production environment | محیط عملیاتی | محیط تولید |
+| API / Endpoint | رابط برنامه‌نویسی / نقطه‌ی پایانی | اندپوینت |
+| Authentication | احراز هویت | اتنتیکیشن |
+| Authorization | سطح دسترسی / مجوزدهی | اتوریزیشن |
+| Feature | قابلیت / ویژگی | فیچر |
+| Production Environment | محیط عملیاتی | محیط پروداکشن / محیط تولید |
+| Stage / Environment | محیط / مرحله | استیج |
+| Token | توکن | نشانه |
+| User Interface (UI) | رابط کاربری | یوآی |
 
-## Orthography (دستور خط)
+---
 
-- Use نیم‌فاصله (ZWNJ, U+200C) — not a plain space — in: می‌/نمی‌ + verb (می‌رود), plural ها (کتاب‌ها), ‌تر/‌ترین (بزرگ‌تر — but بهتر، کمتر، بیشتر are written solid), ‌ای (خانه‌ای), compounds (دانش‌آموز), numeric adjectives (سی‌ساله).
-- Prepositional به stays separate (به تهران رفت); adverbial به takes ZWNJ (به‌ویژه، به‌طور کلی، به‌جز).
-- Ezāfe on words ending in ه is written ه‌ی — ه + ZWNJ + ی: خانه‌ی من. Never with a full space (خانه ی من). The Academy form خانهٔ من is the official alternative; use it when a publisher or a government body requires دستور خط فارسی. Never mix the two in one document.
-- Arabic words ending in hamze drop it: املا، انشا، ابتدا → «املای من».
-- Persian letters only: ی and ک, never Arabic ي and ك.
-- تشنگان, not تشنه‌گان.
+## 3. Orthography (دستور خط)
 
-## Punctuation (نشانه‌گذاری)
+- **Zero-Width Non-Joiner (ZWNJ / نیم‌فاصله)**: Use ZWNJ (`U+200C`)—never a full space—in:
+  - Verb prefixes: `می‌` / `نمی‌` (`می‌رود`)
+  - Plural suffix: `ها` (`کتاب‌ها`)
+  - Comparative/Superlative suffixes: `تر` / `ترین` (`بزرگ‌تر` — note: `بهتر`, `کمتر`, `بیشتر` are written solid)
+  - Indefinite suffix: `ای` (`خانه‌ای`)
+  - Compound nouns/adjectives: (`دانش‌آموز`, `سی‌ساله`)
+- **Preposition `به`**:
+  - Keep prepositional `به` separate: `به تهران رفت`.
+  - Prefix `به` in adverbs/adjectives takes ZWNJ: `به‌ویژه`, `به‌طور کلی`, `به‌جز`.
+- **Ezāfe on Silent `ه` (هٔ / ه‌ی)**:
+  - Write as `ه` + ZWNJ + `ی`: `خانه‌ی من`.
+  - The Academy standard `خانهٔ من` is equally valid for publishers/government requirements. **Do not mix both styles in the same document.** Never use a full space (`خانه ی من`).
+- **Hamza in Loanwords**:
+  - Arabic words ending in hamza drop the character in Persian compound forms: `املا`, `انشا`, `ابتدا` → `املای من`.
+  - Arabic plural forms with hamza are written cleanly: `استثنائات`.
+- **Persian Letterforms Only**:
+  - Use exclusively Persian `ی` (`U+06CC`) and `ک` (`U+06A9`).
+  - Never use Arabic `ي` (`U+064A`) or `ك` (`U+0643`).
+- **Plural `-گان` after a silent `ه`** (drop the `ه`): Write `تشنگان`, not `تشنه‌گان`.
 
-- Persian marks: ، ؛ ؟ « » — not , ; ? " ".
-- No space before . ، ؛ : ؟ ! and one space after. Brackets and quotes: no space inside, one space outside — «نقل‌قول» ، (توضیح).
-- **Supplementary or optional comments go in parentheses, not dashes**: «سود خالص (پس از کسر مالیات) ۱۲٪ افزایش یافت.» Reserve — for a complete interjected clause, and use - only for numeric ranges (۱۳۹۸-۱۴۰۲).
-- ؛ separates long related clauses, or list items that already contain commas.
-- : introduces a list, a quotation, or an explanation.
-- « » for direct quotes, the first appearance of a technical term, and titles. [ ] for your own insertion into a quotation.
-- No comma after و، اما، اگر، که.
-- At most one ! or ? — never !!! or ?!.
+---
 
-## Numbers, dates, bilingual text
+## 4. Punctuation (نشانه‌گذاری)
 
-- Persian digits (۰۱۲۳۴۵۶۷۸۹) in Persian prose. Decimal separator is «/» (۳/۵); thousands separator «٬» (۱٬۲۵۰٬۰۰۰).
-- Space between number and noun (۲۵ تومان); ZWNJ in numeric adjectives (۲۵تومانی).
-- Jalali dates as ۱۴۰۴/۰۶/۱۱. When both calendars appear, label them.
-- Give the English term in parentheses at first mention, then use the Persian consistently: «حسابداری تعهدی (accrual accounting)».
-- Keep Latin identifiers, filenames, code, and URLs in `backticks` so RTL rendering doesn't scramble them.
-- Punctuation next to a Latin word is still Persian.
+- **Persian Punctuation Marks**: Use `،` `؛` `؟` `«` `»` instead of `,` `;` `?` `"` `"`.
+- **Spacing Rules**:
+  - No space *before* `. ، ؛ : ؟ !` and exactly one space *after*.
+  - Quotes and Brackets: No space inside, one space outside → `«نقل‌قول»` ، `(توضیح)`.
+- **Parentheses vs. Dashes**:
+  - Supplementary, optional, or explanatory content goes in parentheses: `سود خالص (پس از کسر مالیات) ۱۲٪ افزایش یافت.`
+  - Reserve em-dashes (`—`) for complete interjected clauses.
+  - Use short dashes (`-`) strictly for numeric or date ranges: `۱۳۹۸-۱۴۰۲`.
+- **Semicolons (`؛`)**: Use to separate long related independent clauses or list items that already contain internal commas.
+- **Colons (`:`)**: Introduce lists, formal quotes, or explanations.
+- **Guillemets (`« »`)**: Enclose direct quotes, titles, and the first occurrence of a specialized technical term. Use `[ ]` only for editorial insertions inside quotes.
+- **Forbidden Punctuation**:
+  - No commas directly after conjunctions: avoid `و،`, `اما،`, `اگر،`, `که،`.
+  - Limit exclamations or questions to a single mark: never use `!!!` or `?!`.
 
-## Markdown and RTL
+---
 
-- Right-align every table column (`---:` in the separator row, all columns) whenever the table holds Persian content.
-- Blank line before every list and after every heading.
-- For HTML output, wrap the body in `<div dir="rtl">` and set `direction: rtl; text-align: right`.
+## 5. Numbers, Dates & Bilingual Text
 
-## Official letter (نامه اداری)
+- **Persian Digits**: Always use Persian digits (`۰۱۲۳۴۵۶۷۸۹`) within Persian body text.
+- **Separators**:
+  - Decimal separator: `/` (`۳/۵`).
+  - Thousands separator: `٬` (`۱٬۲۵۰٬۰۰۰`).
+- **Units and Quantities**: Include a space between numbers and nouns (`۲۵ تومان`); use ZWNJ in numeric adjectives (`۲۵تومانی`).
+- **Dates**: Format Jalali dates as `۱۴۰۴/۰۶/۱۱`. Explicitly label calendar types if both Gregorian and Jalali appear together.
+- **Bilingual Terminology**:
+  - Provide the original English term in parentheses at first mention, then use the Persian translation consistently: `حسابداری تعهدی (accrual accounting)`.
+  - Wrap Latin code snippets, filenames, variables, and URLs in `backticks` to prevent RTL display scrambling.
+  - Keep punctuation adjacent to a Latin word formatted as Persian punctuation.
 
-Recipient title and name → «با سلام و احترام،» or «احتراماً،» → the purpose in the first sentence → body, one request per paragraph → «با تشکر و احترام،» → name, role, date.
+---
 
-- Address people as «جناب آقای …» / «سرکار خانم …», offices as «ریاستِ محترمِ …».
-- State the request explicitly and early; never bury it under ta'arof. Keep to one page.
+## 6. Markdown Formatting & RTL Layout
 
-## Before delivering
+- **Table Alignment**: Explicitly right-align every table column using `---:` in the separator row for all Persian content tables.
+- **Spacing**: Ensure a blank line precedes every list and follows every section heading.
+- **HTML Container**: For web/HTML output, wrap the document in `<div dir="rtl">` and apply CSS `direction: rtl; text-align: right;`.
 
-- Search for ` می ` and ` ها ` written with a plain space — they should be ZWNJ.
-- Confirm no می‌باشد، گردید، or توسط survived.
-- Confirm no Latin digits leaked into Persian prose.
+---
+
+## 7. Official Administrative Letters (نامه اداری)
+
+Follow the standard structure:
+1. Recipient title and honorific
+2. Salutation: `با سلام و احترام،` or `احتراماً،`
+3. Primary purpose stated clearly in the first sentence (avoid burying requests under extended *ta'arof*)
+4. Body text: concise, one request per paragraph
+5. Formal closing: `با تشکر و احترام،`
+6. Sender identity: Name, Role, Date
+
+**Honorific Guidelines**:
+- Address individuals as `جناب آقای …` or `سرکار خانم …`.
+- Address organizational bodies/roles as `ریاست محترمِ …` or `مدیریت محترمِ …`.
+- Keep official correspondence to a single page whenever possible.
+
+---
+
+## 8. Quality Control Checklist (Before Delivery)
+
+Before finalizing any document, run the following verification steps:
+- [ ] **ZWNJ Verification**: Check for accidental spaces in ` می ` and ` ها ` (replace with ZWNJ).
+- [ ] **Forbidden Words Check**: Confirm no instances of `می‌باشد`, `گردید`, `نمودن`, or `توسط` remain.
+- [ ] **Digit Check**: Ensure no Latin digits (`0-9`) appear in standard Persian prose.
+- [ ] **Letterform Check**: Ensure no Arabic `ي` or `ك` characters leaked into the text.
+- [ ] **RTL Table Alignment**: Verify all Markdown tables include right-alignment specifiers (`---:`).

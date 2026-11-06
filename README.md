@@ -7,7 +7,7 @@ Two Agent Skills that teach Claude to write Persian properly, split by register.
 | `persian-formal` | Official letters (نامه اداری), reports, contracts, proposals, articles, bilingual business documents |
 | `persian-informal` | Chat messages, informal email, social posts, personal notes |
 
-Both cover دستور خط (نیم‌فاصله and friends), Persian punctuation, numbers and dates, bilingual Persian/English handling, and right-aligned RTL markdown tables. The formal skill adds sentence structure, a word-choice table (می‌باشد → است, گردید → شد, گزارشات → گزارش‌ها …) and a نامه اداری skeleton. The informal skill adds شکسته‌نویسی rules built on the syllable-reduction test.
+Both cover دستور خط (نیم‌فاصله and friends), Persian punctuation, numbers and dates, bilingual Persian/English handling, and right-aligned RTL markdown tables. The formal skill adds sentence structure, a word-choice table (می‌باشد → است, گردید → شد, گزارشات → گزارش‌ها …) and a نامه اداری skeleton. The informal skill adds شکسته‌نویسی rules (vowel shifts, verb and pronoun contractions, the ه-versus-ezāfe rule), a register matrix and before/after rewrites.
 
 ## Install
 

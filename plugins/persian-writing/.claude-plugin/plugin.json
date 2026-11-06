@@ -1,7 +1,7 @@
 {
   "name": "persian-writing",
   "description": "Persian writing rules for Claude: a formal register for documents, letters and reports, and an informal register for everyday messages.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": { "name": "MG" },
   "homepage": "https://github.com/mmgghh/persian-writing-skills",
   "repository": "https://github.com/mmgghh/persian-writing-skills",
