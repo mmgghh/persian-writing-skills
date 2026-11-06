@@ -1,0 +1,14 @@
+{
+  "name": "mg-skills",
+  "owner": { "name": "MG" },
+  "description": "Persian-language writing skills for Claude Code.",
+  "plugins": [
+    {
+      "name": "persian-writing",
+      "source": "./plugins/persian-writing",
+      "description": "Persian writing rules for Claude: a formal register for documents, letters and reports, and an informal register for everyday messages.",
+      "version": "1.0.0",
+      "license": "MIT"
+    }
+  ]
+}
